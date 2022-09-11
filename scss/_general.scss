@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+img{
+    display: block;
+    height: auto;
+}
+
+body{
+    @include sticky-footer;
+    font-family: var(--main-font-family);
+    font-weight: var(--main-font-weight);
+    background-color: var(--main-bg-color);
+}
+
+.site-main{
+    flex-grow: 1;
+}
